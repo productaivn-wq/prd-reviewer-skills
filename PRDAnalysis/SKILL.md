@@ -96,7 +96,7 @@ Each dimension has an ID, title, weight (% of total), core question, and 5-6 sub
 
 | ID | Subcriteria | Weight | "Good" Standard |
 |----|------------|--------|-----------------|
-| D4.1 | Yêu cầu chức năng | 25% | User stories với Given/When/Then. Cụ thể, kiểm thử được, không mơ hồ. |
+| D4.1 | Yêu cầu chức năng | 25% | User stories với Given/When/Then. Cụ thể, kiểm thử được, không mơ hồ. Tách biệt rõ ràng tác vụ Frontend (UX) và Backend (Technical Tasks). |
 | D4.2 | Yêu cầu phi chức năng | 20% | Mục tiêu hiệu suất, độ tin cậy, khả năng mở rộng với con số chính xác. |
 | D4.3 | Tiêu chí chấp nhận | 25% | Đạt/không đạt đo lường được cho mỗi tính năng. Bao gồm giá trị biên. |
 | D4.4 | Phải / Nên / Có thể | 15% | Mỗi yêu cầu được gắn nhãn rõ ràng. |
@@ -124,11 +124,11 @@ Each dimension has an ID, title, weight (% of total), core question, and 5-6 sub
 
 | ID | Subcriteria | Weight | "Good" Standard |
 |----|------------|--------|-----------------|
-| D6.1 | Tổng quan kiến trúc | 25% | Thiết kế hệ thống cấp cao với lựa chọn công nghệ có lý do. |
+| D6.1 | Tổng quan kiến trúc | 25% | Thiết kế hệ thống cấp cao, lựa chọn công nghệ có lý do. Chốt rõ chiến lược lưu trữ trạng thái (Local vs Server sync). |
 | D6.2 | Phụ thuộc & điểm lỗi đơn | 25% | Dịch vụ bên ngoài được xác định. SPOF được chỉ ra kèm phương án dự phòng. |
 | D6.3 | Khả năng mở rộng & hạ tầng | 20% | Dự phóng tải được xác định. Chiến lược mở rộng rõ ràng. |
 | D6.4 | Rủi ro kỹ thuật | 15% | Sổ rủi ro với khả năng xảy ra/tác động. Các hạng mục Spike/POC được xác định. |
-| D6.5 | Kế hoạch tích hợp | 15% | Hợp đồng API hoặc đặc tả giao diện cho ranh giới hệ thống. |
+| D6.5 | Kế hoạch tích hợp | 15% | Hợp đồng API và đặc tả giao diện (trường dữ liệu, API mở, tần suất cập nhật) khi kết nối hệ thống ngoài. |
 
 ---
 
@@ -137,7 +137,7 @@ Each dimension has an ID, title, weight (% of total), core question, and 5-6 sub
 
 | ID | Subcriteria | Weight | "Good" Standard |
 |----|------------|--------|-----------------|
-| D7.1 | Điều kiện biên | 25% | Giới hạn đầu vào, trạng thái rỗng, max/min, truy cập đồng thời được tài liệu hóa. |
+| D7.1 | Điều kiện biên | 25% | Giới hạn đầu vào, trạng thái rỗng/loading, phân trang (pagination/scroll), và luồng tương tác nhiều item cùng lúc được tài liệu hóa. |
 | D7.2 | Trạng thái lỗi & phục hồi | 25% | Thông báo lỗi hiển thị cho người dùng. Logic thử lại. Suy giảm nhẹ nhàng. |
 | D7.3 | Lỗi phụ thuộc bên ngoài | 25% | Hành vi khi API chậm/lỗi. Timeout và circuit-breaker. |
 | D7.4 | Lạm dụng & sử dụng sai | 15% | Giới hạn tốc độ, chống spam, xử lý đầu vào độc hại. |
@@ -177,7 +177,7 @@ Each dimension has an ID, title, weight (% of total), core question, and 5-6 sub
 | ID | Subcriteria | Weight | "Good" Standard |
 |----|------------|--------|-----------------|
 | D10.1 | Tính nhất quán cấu trúc | 25% | Các phần bắt buộc đầy đủ: Vấn đề, User Stories, AC, Chỉ số. |
-| D10.2 | Hệ thống ID & truy xuất | 20% | ID duy nhất (US-XXX, FR-XXX). Tham chiếu chéo nhất quán. |
+| D10.2 | Hệ thống ID & truy xuất | 20% | ID duy nhất (US/FR). Tham chiếu chéo nhất quán, đặc biệt phải có link/bản đồ map tới các PRD có logic/giao diện liên quan. |
 | D10.3 | Nhất quán thuật ngữ | 15% | Có bảng thuật ngữ. Cùng một thuật ngữ xuyên suốt. |
 | D10.4 | Luồng logic & mạch lạc | 15% | Các phần xây dựng trên nhau. Phân cấp thông tin rõ ràng. |
 | D10.5 | Kiểm tra đầy đủ | 15% | Tất cả phần tiêu chuẩn có mặt. Không có TBD chưa gán người phụ trách. |
