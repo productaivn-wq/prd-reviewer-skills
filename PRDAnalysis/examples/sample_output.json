@@ -1,0 +1,55 @@
+{
+  "totalScore": 75,
+  "verdict": "Cần cải thiện — Có lỗ hổng",
+  "sections": [
+    {
+      "title": "D1 — Xác thực vấn đề",
+      "score": 82,
+      "status": "pass",
+      "subcriteria": [
+        {
+          "id": "D1.1",
+          "name": "Mức độ cụ thể của vấn đề",
+          "score": 85,
+          "comment": "Vấn đề được mô tả rõ ràng dưới dạng nỗi đau người dùng, có số liệu cụ thể.",
+          "deductionReason": "Thiếu phân tích hành vi chi tiết — chỉ nêu nỗi đau chung mà chưa phân biệt theo phân khúc người dùng. Trừ 15 điểm theo rubric thiếu chi tiết nhỏ.",
+          "wbs": "2.1",
+          "evidence": ["70% người dùng phải chờ trung bình 15 phút để hoàn tất giao dịch"]
+        },
+        {
+          "id": "D1.2",
+          "name": "Chất lượng bằng chứng",
+          "score": 70,
+          "comment": "Có trích dẫn khảo sát nhưng thiếu dữ liệu phỏng vấn sâu.",
+          "deductionReason": "Chỉ có 1 nguồn khảo sát online, không có phỏng vấn sâu hoặc dữ liệu hành vi thực tế. Trừ 30 điểm theo rubric thiếu thông tin cốt lõi.",
+          "wbs": "2.1.2",
+          "evidence": ["Theo khảo sát online với 500 người dùng (03/2025)"]
+        }
+      ],
+      "praise": [
+        {
+          "praise": "Vấn đề được lượng hóa rõ ràng với số liệu cụ thể và nguồn trích dẫn có thời gian.",
+          "evidence": ["70% người dùng phải chờ trung bình 15 phút", "chi phí vận hành tăng 40% YoY"]
+        }
+      ],
+      "issues": [
+        {
+          "issue": "Thiếu phân tích giải pháp thay thế hiện có và nhược điểm cụ thể của từng giải pháp.",
+          "severity": "major",
+          "wbs": "2.3",
+          "evidence": ["Hiện tại người dùng sử dụng quy trình thủ công"]
+        },
+        {
+          "issue": "Lý do thời điểm ('tại sao bây giờ?') chưa được nêu rõ — thiếu phân tích thay đổi thị trường hoặc công nghệ mới.",
+          "severity": "minor",
+          "wbs": "",
+          "evidence": []
+        }
+      ],
+      "suggestions": [
+        "Bổ sung bảng so sánh 2-3 giải pháp thay thế với nhược điểm cụ thể được chứng minh bằng dữ liệu.",
+        "Thêm mục 'Tại sao bây giờ?' với phân tích xu hướng thị trường hoặc thay đổi quy định."
+      ]
+    }
+  ]
+}
